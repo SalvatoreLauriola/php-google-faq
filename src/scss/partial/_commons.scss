@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+
+.container {
+    width: 1048px;  
+    margin: 0 auto;
+}
+
+
+
+/**********
+* Mixin
+***********/
+// flex
+@mixin flex($align:flex-start, $just-content:flex-start, $flex-direction:row) {
+    display: flex;
+    align-items: $align;
+    justify-content: $just-content;
+    flex-direction: $flex-direction;
+}
+
+@mixin font_style ($size: false, $color: false, $weight: false, $lh: false, $ls: false) {
+    font-family: $general_font;
+  // font-size
+  @if $size {
+    font-size: $size;
+  }
+  // color
+  @if $color {
+    color: $color;
+  }
+  // font-weight
+  @if $weight {
+    font-weight: $weight;
+    }
+    // line-height
+  @if $lh {
+    line-height: $lh;
+  }
+  // letter-spacing
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+
+@mixin list {
+    list-style: none;
+    
+}
+
+@mixin a_style {
+    text-decoration: none;
+}

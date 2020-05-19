@@ -1,0 +1,23 @@
+.style {
+    @include flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.style {
+    @include flex(center,space-between);
+}
+.footer {
+    @include flex;
+}
+footer {
+    
+    background-color: #f5f5f5;
+    
+    li {
+        @include list;
+    }
+        a {
+            @include a_style;
+        }
+}
